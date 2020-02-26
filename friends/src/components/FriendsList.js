@@ -8,7 +8,7 @@ const FriendsList = () => {
   const [change, setChange] = useState(false);
   const [updatedFriend, setUpdatedFriend] = useState({
     name: "",
-    age: 0,
+    age: "",
     email: ""
   });
 
@@ -41,7 +41,7 @@ const FriendsList = () => {
 
   // on change for editing
   const handleChange = e => {
-    setUpdatedFriend({...friends, [e.target.name]: e.target.value });
+    setUpdatedFriend({...updatedFriend, [e.target.name]: e.target.value });
   };
 
   return (
