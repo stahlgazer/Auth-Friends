@@ -41,7 +41,7 @@ const FriendsList = () => {
 
   // on change for editing
   const handleChange = e => {
-    setUpdatedFriend({...updatedFriend, [e.target.name]: e.target.value });
+    setUpdatedFriend({...friends, [e.target.name]: e.target.value });
   };
 
   return (
