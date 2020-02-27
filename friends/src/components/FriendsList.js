@@ -25,7 +25,7 @@ const FriendsList = () => {
       });
   }, [change]);
 
-  // delete friend
+  // delete a friend
   const deleteFriend = friend => {
     console.log("deleting friend: ", friend);
     axiosWithAuth().delete(`friends/${friend.id}`);
